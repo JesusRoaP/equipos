@@ -2,12 +2,12 @@
 /**
  * Plugin Name: Equipos
  * Plugin URI: 
- * Description: Crea un slider con equipos de trabajo.
+ * Description: Crea un slider con los miembros de un equipo de trabajo.
  * Version: 1.0
  * Author: Jesus Mauricio Roa Polania
- * Author URI: 
+ * Author URI: https://github.com/JesusRoaP
  * Text Domain: equipos
- * License: GPL2
+ * License: GPL3
  */
 
 /* Defines plugin's root folder. */
