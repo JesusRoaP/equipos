@@ -33,12 +33,8 @@ function dmb_equipos_bio_align_options() {
 
 /* Defines team columns options. */
 function dmb_equipos_columns_options() {
-	$options = array ( 
-		__('1 por linea', EQ_NAME) => '1',
-		__('2 por linea', EQ_NAME) => '2',
+	$options = array ( 	
 		__('3 por linea', EQ_NAME) => '3',
-		__('4 por linea', EQ_NAME) => '4',
-		__('5 por linea', EQ_NAME) => '5'    
 	);
 	return $options;
 }
@@ -101,7 +97,7 @@ function dmb_equipos_settings_display() {
 			<div class="dmb_field_title">
 				<?php _e('Miembros por linea', EQ_NAME ) ?>
 			</div>
-			<select class="dmb_side_select" name="team_columns" disabled>
+			<select class="dmb_side_select" name="team_columns">
 				<?php foreach ( $team_columns as $label => $value ) { ?>
 					<option value="<?php echo $value; ?>"<?php selected( (isset($settings['_equipos_columns'])) ? $settings['_equipos_columns'] : '3', $value ); ?>><?php echo $label; ?></option>
 				<?php } ?>
