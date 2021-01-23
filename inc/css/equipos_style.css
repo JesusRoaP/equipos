@@ -163,6 +163,9 @@
 	margin-top:19px; 
 	margin-bottom:10px; }
 
+#list li {
+	line-height: 1.75;
+}
 
 /* TABLETS */
 @media only screen and (max-width: 64.063em) {

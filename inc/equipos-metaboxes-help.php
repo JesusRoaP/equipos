@@ -22,12 +22,12 @@ function dmb_equipos_help_display() { ?>
 				$slug = '';
 				$slug = $post->post_name;
 				$shortcode = '<span style="display:inline-block;border:solid 2px #999999; background:white; padding:0 8px 2px; font-size:14px; line-height:25px; vertical-align:middle;">[equipos name="'.$slug.'"]</span>';
-				$shortcode_unpublished = "<span style='display:inline-block;color:#e17055'>" . /* translators: Leave HTML tags */ __("<strong>Publish</strong> your team before you can see you shortcode here!", EQ_NAME ) . "</span>";
+				$shortcode_unpublished = "<span style='display:inline-block;color:#e17055'>" . /* translators: Leave HTML tags */ __("<strong>Publica</strong> tu equipo para que puedas ver tu shortcode aquí.", EQ_NAME ) . "</span>";
 				echo ($slug != '') ? $shortcode : $shortcode_unpublished;
 			?>
 		</p>
 		<p>
-			<?php /* translators: Leave HTML tags */ _e('Para mostrar este equipo en su sitio web, copie y pegue el <strong>[Shortcode]</strong> de arriba en su post.', EQ_NAME ) ?>
+			<?php /* translators: Leave HTML tags */ _e('Para mostrar este equipo en tu sitio web, copie y pegue el <strong>[Shortcode]</strong> de arriba en una entrada o página.', EQ_NAME ) ?>
 		</p>	
 	</div>
 

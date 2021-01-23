@@ -398,6 +398,7 @@ $(document).ready(function (){
     /* Prepares the output. */
     preview_html += '<div class="slider--teams equipos" style="margin-top: 100px;">';
       preview_html += '<div class="slider--teams__team equipos_' + settings.columns + '_columns equipos_wrap equipos_plugin_f">';
+      preview_html += '<ul id="list" class="cf equipos_container">';
 
         $('.dmb_main').not('.dmb_empty_row').each(function(i, obj){
 
@@ -425,15 +426,6 @@ $(document).ready(function (){
           fields.scl_url3 = $(this).find(".dmb_scl_url3_of_member").val();
           fields.photoUrl = $(this).find(".dmb_img").attr('src');
           fields.photoLinkUrl = $(this).find(".dmb_photo_url_of_member").val();
-
-        
-          if(i%settings.columns == 0) {
-            /* If first member of group. */
-            if(i > 0) {
-              preview_html += '</div><span class="equipos_columns_containers_desktop"></span>';
-            }
-            preview_html += '<ul id="list" class="cf equipos_container">';
-          }
 
           preview_html += '<li>';
           preview_html += '<figure class="">';
@@ -505,7 +497,6 @@ $(document).ready(function (){
           if (i == (team.memberCount - 1))
             preview_html += '<div style="clear:both;"></div>';
         });
-        
 
         preview_html += '</ul>'; // Closes container.
       preview_html += '</div>'; // Closes wrap.
